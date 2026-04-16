@@ -19,9 +19,15 @@
       Anggia Putri Wulan Suci
     </h1>
 
+    <!-- Hamburger (Mobile) -->
+    <button id="menu-btn" class="md:hidden text-gray-100">
+      <i data-lucide="menu" class="w-6 h-6"></i>
+    </button>
     <!-- Navigation -->
-    <nav class="flex gap-6 text-sm text-gray-400">
-
+    <nav id="menu" 
+        class="hidden flex-col gap-4 text-sm text-gray-400
+                absolute top-full left-0 w-full bg-[#0f172a] p-6
+                md:flex md:flex-row md:gap-6 md:static md:w-auto md:bg-transparent md:p-0">
       <a href="#about" class="relative group hover:text-white transition">
         About
         <span class="absolute left-0 -bottom-1 w-0 h-[1.5px] bg-gray-300 transition-all group-hover:w-full"></span>
@@ -37,7 +43,6 @@
         <span class="absolute left-0 -bottom-1 w-0 h-[1.5px] bg-gray-300 transition-all group-hover:w-full"></span>
       </a>
 
-      <!-- ORGANIZATION (baru) -->
       <a href="#organization" class="relative group hover:text-white transition">
         Organization
         <span class="absolute left-0 -bottom-1 w-0 h-[1.5px] bg-gray-300 transition-all group-hover:w-full"></span>
@@ -116,7 +121,52 @@
   </div>
 
 </section>
+<!-- School -->
+<section id="education" class="max-w-4xl mx-auto px-6 py-12">
+  
+  <h2 class="text-3xl font-bold mb-10 text-center text-gray-100">
+    Education
+  </h2>
 
+  <div class="relative border-l-2 border-blue-300 space-y-8">
+
+    <!-- S1 -->
+    <div class="ml-6">
+      <div class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full"></div>
+
+      <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+        
+        <div class="flex items-center gap-3 mb-2">
+          <i data-lucide="graduation-cap" class="w-6 h-6 text-blue-500"></i>
+          <h3 class="font-bold text-lg">Bachelor of Informatics Engineering</h3>
+        </div>
+
+        <p class="text-gray-600">Universitas Nusa Putra, Sukabumi</p>
+        <p class="text-sm text-gray-500 mt-1">GPA: 3.60 / 4.00</p>
+
+      </div>
+    </div>
+
+    <!-- SMA -->
+    <div class="ml-6">
+      <div class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full"></div>
+
+      <div class="bg-gradient-to-br from-purple-50 to-white p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+        
+        <div class="flex items-center gap-3 mb-2">
+          <i data-lucide="school" class="w-6 h-6 text-purple-500"></i>
+          <h3 class="font-bold text-lg">Senior High School</h3>
+        </div>
+
+        <p class="text-gray-600">SMA Negeri 1 Cibadak</p>
+        <p class="text-sm text-gray-500 mt-1">Graduated: 2020</p>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
 
 
 <section id="projects" class="max-w-5xl mx-auto px-6 py-10">
@@ -134,7 +184,7 @@
         Processed and refined geospatial data by clipping and aligning administrative boundaries using QGIS. 
         Ensured data accuracy and consistency for further spatial analysis and mapping.
       </p>
-      <a href="#" target="_blank" class="text-blue-500 text-sm hover:underline">
+      <a href="https://github.com/anggiapws/Spatial-Data-Processing-Map-Clipping-using-QGIS" target="_blank" class="text-blue-500 text-sm hover:underline">
         View Project →
       </a>
     </div>
@@ -177,33 +227,6 @@
         </a>
 
     </div> 
-    <!-- Project 2 -->
-    <div class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-      <div class="flex items-center gap-2 mb-3">
-        <i data-lucide="database" class="w-5 h-5 text-blue-500"></i>
-        <h3 class="font-bold">Data Cleaning & Validation</h3>
-      </div>
-      <p class="text-sm text-gray-600 mb-4">
-        Cleaned and validated large datasets using Python and Excel to ensure consistency, accuracy, and readiness for analysis.
-      </p>
-      <a href="#" target="_blank" class="text-blue-500 text-sm hover:underline">
-        View Project →
-      </a>
-    </div>
-
-    <!-- Project 3 -->
-    <div class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-      <div class="flex items-center gap-2 mb-3">
-        <i data-lucide="cpu" class="w-5 h-5 text-purple-500"></i>
-        <h3 class="font-bold">AI-Based Data Prediction</h3>
-      </div>
-      <p class="text-sm text-gray-600 mb-4">
-        Developing a machine learning model to analyze patterns and predict trends from structured datasets (ongoing project).
-      </p>
-      <a href="#" target="_blank" class="text-blue-500 text-sm hover:underline">
-        View Project →
-      </a>
-    </div>
 
   </div>
 </section>
@@ -236,12 +259,13 @@
       <div class="bg-gradient-to-br from-blue-50 to-white p-5 rounded-2xl shadow-sm hover:shadow-lg transition">
         <h3 class="font-bold text-lg">Computer & IT Teacher – SMK Ganesa</h3>
         <p class="text-sm text-gray-500 mb-2">Aug 2024 – Present</p>
-        <ul class="list-disc ml-5 text-sm space-y-1">
-          <li>Teach AI, coding, and networking to 300+ students.</li>
-          <li>Design project-based learning for AI development.</li>
-          <li>Guide students in building AI-based systems.</li>
-          <li>Analyze academic data using Excel & Google Sheets.</li>
-        </ul>
+          <ul class="list-disc ml-5 text-sm space-y-1">
+            <li>Analyzed academic and student performance data using Excel and Google Sheets to support data-driven decision making.</li>
+            <li>Delivered introductory lessons on AI, data analysis, and programming to 300+ students.</li>
+            <li>Designed project-based learning activities involving basic data processing and problem-solving.</li>
+            <li>Collected, cleaned, and organized student and academic data for reporting and evaluation.</li>
+            <li>Applied analytical thinking to identify patterns and improve learning outcomes.</li>
+          </ul>
       </div>
     </div>
 
@@ -252,10 +276,11 @@
         <h3 class="font-bold text-lg">Statistics Partner – BPS</h3>
         <p class="text-sm text-gray-500 mb-2">Sep 2025 – Oct 2025</p>
         <ul class="list-disc ml-5 text-sm space-y-1">
-          <li>Processed spatial data using QGIS.</li>
-          <li>Integrated survey data with maps.</li>
-          <li>Performed data validation and cleaning.</li>
-          <li>Conducted quality checks.</li>
+          <li>Processed and cleaned 500+ spatial and survey datasets using QGIS and digital tools.</li>
+          <li>Performed data validation, ensuring accuracy, consistency, and completeness.</li>
+          <li>Integrated spatial and tabular data for statistical analysis and reporting.</li>
+          <li>Conducted data quality checks to improve reliability and reduce inconsistencies.</li>
+          <li>Collaborated with teams to ensure data readiness for further analysis.</li>
         </ul>
       </div>
     </div>
@@ -267,9 +292,9 @@
         <h3 class="font-bold text-lg">Data Entry – Agricultural Census (BPS)</h3>
         <p class="text-sm text-gray-500 mb-2">Jul 2023 – Sep 2023</p>
         <ul class="list-disc ml-5 text-sm space-y-1">
-          <li>Processed 800+ agricultural survey data.</li>
-          <li>Resolved anomalies and inconsistencies.</li>
-          <li>Validated data with field records.</li>
+          <li>Processed and validated 800+ agricultural datasets for statistical use.</li>
+          <li>Performed data cleaning to ensure consistency and accuracy.</li>
+          <li>Identified anomalies and corrected inconsistencies in large datasets.</li>
         </ul>
       </div>
     </div>
@@ -295,9 +320,9 @@
         <h3 class="font-bold text-lg">Data Entry – Population Census (BPS)</h3>
         <p class="text-sm text-gray-500 mb-2">Jan 2023 – Mar 2023</p>
         <ul class="list-disc ml-5 text-sm space-y-1">
-          <li>Processed 900+ population data.</li>
-          <li>Cleaned and validated datasets.</li>
-          <li>Ensured consistency with field data.</li>
+          <li>Managed and structured 900+ population data records.</li>
+          <li>Applied data cleaning techniques to improve dataset quality.</li>
+          <li>Ensured data integrity through systematic validation processes.</li>
         </ul>
       </div>
     </div>
@@ -360,74 +385,6 @@
   </div>
 </section>
 
-<!-- Skills -->
-<section id="skills" class="py-12">
-  <div class="max-w-5xl mx-auto px-6">
-
-    <h2 class="text-3xl font-semibold mb-10 text-center text-gray-100">
-      Skills
-    </h2>
-
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-
-      <!-- SQL -->
-      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-        <i data-lucide="database" class="w-8 h-8 text-blue-500 mb-2"></i>
-        <span class="font-medium text-gray-800">SQL</span>
-      </div>
-
-      <!-- Python -->
-      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-        <i data-lucide="code" class="w-8 h-8 text-yellow-500 mb-2"></i>
-        <span class="font-medium text-gray-800">Python</span>
-      </div>
-
-      <!-- QGIS -->
-      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-        <i data-lucide="map" class="w-8 h-8 text-green-500 mb-2"></i>
-        <span class="font-medium text-gray-800">QGIS</span>
-      </div>
-
-      <!-- Excel -->
-      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-        <i data-lucide="bar-chart" class="w-8 h-8 text-emerald-500 mb-2"></i>
-        <span class="font-medium text-gray-800">Excel</span>
-      </div>
-
-      <!-- Machine Learning -->
-      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-        <i data-lucide="cpu" class="w-8 h-8 text-purple-500 mb-2"></i>
-        <span class="font-medium text-gray-800">Machine Learning</span>
-      </div>
-
-      <!-- Data Analysis -->
-      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-        <i data-lucide="line-chart" class="w-8 h-8 text-pink-500 mb-2"></i>
-        <span class="font-medium text-gray-800">Data Analysis</span>
-      </div>
-
-      <!-- Data Cleaning -->
-      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-        <i data-lucide="filter" class="w-8 h-8 text-gray-500 mb-2"></i>
-        <span class="font-medium text-gray-800">Data Cleaning</span>
-      </div>
-
-      <!-- Data Visualization -->
-      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-        <i data-lucide="pie-chart" class="w-8 h-8 text-indigo-500 mb-2"></i>
-        <span class="font-medium text-gray-800">Data Visualization</span>
-      </div>
-
-      <!-- Statistical Analysis -->
-      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-        <i data-lucide="activity" class="w-8 h-8 text-red-400 mb-2"></i>
-        <span class="font-medium text-gray-800">Statistical Analysis</span>
-      </div>
-
-    </div>
-
-  </div>
-</section>
 
 <!-- Content Writing -->
 <!-- Content Writing -->
@@ -522,6 +479,75 @@
 
 </section>  
 
+<!-- Skills -->
+<section id="skills" class="py-12">
+  <div class="max-w-5xl mx-auto px-6">
+
+    <h2 class="text-3xl font-semibold mb-10 text-center text-gray-100">
+      Skills
+    </h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+
+      <!-- SQL -->
+      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+        <i data-lucide="database" class="w-8 h-8 text-blue-500 mb-2"></i>
+        <span class="font-medium text-gray-800">SQL</span>
+      </div>
+
+      <!-- Python -->
+      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+        <i data-lucide="code" class="w-8 h-8 text-yellow-500 mb-2"></i>
+        <span class="font-medium text-gray-800">Python</span>
+      </div>
+
+      <!-- QGIS -->
+      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+        <i data-lucide="map" class="w-8 h-8 text-green-500 mb-2"></i>
+        <span class="font-medium text-gray-800">QGIS</span>
+      </div>
+
+      <!-- Excel -->
+      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+        <i data-lucide="bar-chart" class="w-8 h-8 text-emerald-500 mb-2"></i>
+        <span class="font-medium text-gray-800">Excel</span>
+      </div>
+
+      <!-- Machine Learning -->
+      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+        <i data-lucide="cpu" class="w-8 h-8 text-purple-500 mb-2"></i>
+        <span class="font-medium text-gray-800">Machine Learning</span>
+      </div>
+
+      <!-- Data Analysis -->
+      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+        <i data-lucide="line-chart" class="w-8 h-8 text-pink-500 mb-2"></i>
+        <span class="font-medium text-gray-800">Data Analysis</span>
+      </div>
+
+      <!-- Data Cleaning -->
+      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+        <i data-lucide="filter" class="w-8 h-8 text-gray-500 mb-2"></i>
+        <span class="font-medium text-gray-800">Data Cleaning</span>
+      </div>
+
+      <!-- Data Visualization -->
+      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+        <i data-lucide="pie-chart" class="w-8 h-8 text-indigo-500 mb-2"></i>
+        <span class="font-medium text-gray-800">Data Visualization</span>
+      </div>
+
+      <!-- Statistical Analysis -->
+      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+        <i data-lucide="activity" class="w-8 h-8 text-red-400 mb-2"></i>
+        <span class="font-medium text-gray-800">Statistical Analysis</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
   <!-- Contact -->
 <section id="contact" class=" py-10">
   <div class="max-w-4xl mx-auto px-6">
@@ -574,5 +600,14 @@
 <script>
   lucide.createIcons();
 </script>
+<script>
+  const btn = document.getElementById("menu-btn");
+  const menu = document.getElementById("menu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
+
 </body>
 </html>
