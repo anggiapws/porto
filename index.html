@@ -1,605 +1,616 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anggia Putri Wulan Suci</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
-</head>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anggia Putri Wulan Suci</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
 
-<body class="text-gray-800 bg-cover bg-center bg-fixed " style="background-image: url('bg.jpg');">
-
-
-<header class="sticky top-0 z-50 bg-[#0f172a]/80 backdrop-blur border-b border-gray-800">
-  <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-
-    <!-- Name -->
-    <h1 class="text-lg md:text-xl font-semibold text-gray-100 tracking-wide">
-      Anggia Putri Wulan Suci
-    </h1>
-
-    <!-- Hamburger (Mobile) -->
-    <button id="menu-btn" class="md:hidden text-gray-100">
-      <i data-lucide="menu" class="w-6 h-6"></i>
-    </button>
-    <!-- Navigation -->
-    <nav id="menu" 
-        class="hidden flex-col gap-4 text-sm text-gray-400
-                absolute top-full left-0 w-full bg-[#0f172a] p-6
-                md:flex md:flex-row md:gap-6 md:static md:w-auto md:bg-transparent md:p-0">
-      <a href="#about" class="relative group hover:text-white transition">
-        About
-        <span class="absolute left-0 -bottom-1 w-0 h-[1.5px] bg-gray-300 transition-all group-hover:w-full"></span>
-      </a>
-
-      <a href="#skills" class="relative group hover:text-white transition">
-        Skills
-        <span class="absolute left-0 -bottom-1 w-0 h-[1.5px] bg-gray-300 transition-all group-hover:w-full"></span>
-      </a>
-
-      <a href="#projects" class="relative group hover:text-white transition">
-        Projects
-        <span class="absolute left-0 -bottom-1 w-0 h-[1.5px] bg-gray-300 transition-all group-hover:w-full"></span>
-      </a>
-
-      <a href="#organization" class="relative group hover:text-white transition">
-        Organization
-        <span class="absolute left-0 -bottom-1 w-0 h-[1.5px] bg-gray-300 transition-all group-hover:w-full"></span>
-      </a>
-
-      <a href="#contact" class="relative group hover:text-white transition">
-        Contact
-        <span class="absolute left-0 -bottom-1 w-0 h-[1.5px] bg-gray-300 transition-all group-hover:w-full"></span>
-      </a>
-
-    </nav>
-
-  </div>
-</header>
-
-  <!-- Hero -->
-<section class="relative py-20 text-white">
-
-  <!-- Background Image -->
-  <!-- Overlay (biar teks tetap kebaca) -->
-  <div class="absolute inset-0 bg-black/50"></div>
-
-  <!-- Content -->
-<div class="relative max-w-4xl mx-auto text-center px-6">
-
-  <h2 class="text-4xl font-bold mb-4">
-    Data Analyst & AI Enthusiast
-  </h2>
-
-  <p class="text-gray-300 max-w-2xl mx-auto">
-    Informatics Engineering graduate with hands-on experience in public data systems and spatial analysis. 
-    Passionate about transforming data into meaningful insights and exploring machine learning for real-world applications.
-  </p>
-
-</div>
-</section>
-
-<!-- About -->
-<section id="about" class="max-w-5xl mx-auto px-6 py-12">
-
-  <div class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-
-    <div class="flex flex-col md:flex-row items-center gap-10">
-
-      <!-- FOTO -->
-      <div class="md:w-1/3 flex justify-center">
-        <img src="foto.jpg" 
-             alt="Profile"
-             class="w-52 h-52 object-cover rounded-xl border border-gray-200">
-      </div>
-
-      <!-- TEXT -->
-    <div class="md:w-2/3 text-center md:text-left">
-      <h2 class="text-2xl font-semibold mb-5 text-gray-800">
-        About Me
-      </h2>
-
-      <p class="text-gray-700 leading-relaxed">
-        I have been working closely with data—cleaning, validating, and interpreting it, 
-        particularly in spatial and statistical contexts through my involvement in public data projects.
-      </p>
-
-      <p class="text-gray-600 leading-relaxed mt-4">
-        Through my experience in both data-related work and teaching, I have developed a practical 
-        approach to problem-solving, along with strong attention to detail and the ability to explain concepts clearly.
-      </p>
-
-      <p class="text-gray-600 leading-relaxed mt-4">
-        I am interested in developing data-driven solutions and exploring the application of machine learning 
-        to support decision-making, especially in public and agricultural sectors.
-      </p>
-
-    </div>
-    </div>
-
-  </div>
-
-</section>
-<!-- School -->
-<section id="education" class="max-w-4xl mx-auto px-6 py-12">
-  
-  <h2 class="text-3xl font-bold mb-10 text-center text-gray-100">
-    Education
-  </h2>
-
-  <div class="relative border-l-2 border-blue-300 space-y-8">
-
-    <!-- S1 -->
-    <div class="ml-6">
-      <div class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full"></div>
-
-      <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-        
-        <div class="flex items-center gap-3 mb-2">
-          <i data-lucide="graduation-cap" class="w-6 h-6 text-blue-500"></i>
-          <h3 class="font-bold text-lg">Bachelor of Informatics Engineering</h3>
-        </div>
-
-        <p class="text-gray-600">Universitas Nusa Putra, Sukabumi</p>
-        <p class="text-sm text-gray-500 mt-1">GPA: 3.60 / 4.00</p>
-
-      </div>
-    </div>
-
-    <!-- SMA -->
-    <div class="ml-6">
-      <div class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full"></div>
-
-      <div class="bg-gradient-to-br from-purple-50 to-white p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-        
-        <div class="flex items-center gap-3 mb-2">
-          <i data-lucide="school" class="w-6 h-6 text-purple-500"></i>
-          <h3 class="font-bold text-lg">Senior High School</h3>
-        </div>
-
-        <p class="text-gray-600">SMA Negeri 1 Cibadak</p>
-        <p class="text-sm text-gray-500 mt-1">Graduated: 2020</p>
-
-      </div>
-    </div>
-
-  </div>
-
-</section>
+  <body class="text-gray-800 bg-cover bg-center bg-fixed " style="background-image: url('bg.jpg');">
 
 
-<section id="projects" class="max-w-5xl mx-auto px-6 py-10">
-  <h2 class="text-3xl font-bold mb-8 text-center text-gray-100">Projects</h2>
+  <header class="sticky top-0 z-50 bg-[#0f172a]/80 backdrop-blur border-b border-gray-800">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
 
-  <div class="grid md:grid-cols-3 gap-6">
+      <!-- Name -->
+      <h1 class="text-lg md:text-xl font-semibold text-gray-100 tracking-wide">
+        Anggia Putri Wulan Suci
+      </h1>
 
-    <!-- Project 1 -->
-    <div class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-      <div class="flex items-center gap-2 mb-3">
-        <i data-lucide="map" class="w-5 h-5 text-green-500"></i>
-        <h3 class="font-bold">Spatial Data Processing & Map Clipping</h3>
-      </div>
-      <p class="text-sm text-gray-600 mb-4">
-        Processed and refined geospatial data by clipping and aligning administrative boundaries using QGIS. 
-        Ensured data accuracy and consistency for further spatial analysis and mapping.
-      </p>
-      <a href="https://github.com/anggiapws/Spatial-Data-Processing-Map-Clipping-using-QGIS" target="_blank" class="text-blue-500 text-sm hover:underline">
-        View Project →
-      </a>
-    </div>
+      <!-- Hamburger (Mobile) -->
+      <button id="menu-btn" class="md:hidden text-gray-100">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+      <!-- Navigation -->
+      <nav id="menu" 
+        class="hidden flex-col text-sm text-gray-300
+              absolute top-full left-0 w-full bg-[#0f172a] p-4 border-t border-gray-700
 
-    <!-- Project 2 -->
-    <div class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+              md:flex md:flex-row md:gap-6 md:static 
+              md:w-auto md:bg-transparent md:p-0 md:border-none">
 
-        <div class="flex items-center gap-2 mb-3">
-            <i data-lucide="database" class="w-5 h-5 text-indigo-500"></i>
-            <h3 class="font-bold">Agricultural Data Cleaning & Validation</h3>
-        </div>
-
-        <p class="text-sm text-gray-600 mb-4">
-            Cleaned and validated agricultural data by correcting errors, standardizing names, and checking duplicates.
-            The dataset was processed using an official government system and has been submitted for further use.
-            This repository serves as documentation of the cleaning process and results.
-        </p>
-
-        <a href="https://github.com/anggiapws/Agricultural-Export-Price-Analysis-Dashboard" target="_blank" class="text-blue-500 text-sm hover:underline">
-            View Project →
+        <a href="#about" class="block py-2 md:py-0 relative group hover:text-white transition">
+          About
+          <span class="hidden md:block absolute left-0 -bottom-1 w-0 h-[1.5px] bg-gray-300 transition-all group-hover:w-full"></span>
         </a>
 
-    </div>
-
-   <!-- Project 2 -->
-    <div class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-
-        <div class="flex items-center gap-2 mb-3">
-            <i data-lucide="trending-up" class="w-5 h-5 text-blue-500"></i>
-            <h3 class="font-bold">Agricultural Export Value Prediction</h3>
-        </div>
-
-        <p class="text-sm text-gray-600 mb-4">
-          Developed a predictive model using Linear Regression to estimate export values of plantation commodities in international markets. 
-          The project includes data preprocessing, model training, and visualization through an interactive dashboard to support data-driven insights.
-        </p>
-
-        <a href="https://prediksieksporperkebunan.streamlit.app/" target="_blank" class="text-blue-500 text-sm hover:underline">
-            View Project →
+        <a href="#skills" class="block py-2 md:py-0 relative group hover:text-white transition">
+          Skills
+          <span class="hidden md:block absolute left-0 -bottom-1 w-0 h-[1.5px] bg-gray-300 transition-all group-hover:w-full"></span>
         </a>
 
-    </div> 
+        <a href="#projects" class="block py-2 md:py-0 relative group hover:text-white transition">
+          Projects
+          <span class="hidden md:block absolute left-0 -bottom-1 w-0 h-[1.5px] bg-gray-300 transition-all group-hover:w-full"></span>
+        </a>
 
-  </div>
-</section>
+        <a href="#organization" class="block py-2 md:py-0 relative group hover:text-white transition">
+          Organization
+          <span class="hidden md:block absolute left-0 -bottom-1 w-0 h-[1.5px] bg-gray-300 transition-all group-hover:w-full"></span>
+        </a>
 
+        <a href="#contact" class="block py-2 md:py-0 relative group hover:text-white transition">
+          Contact
+          <span class="hidden md:block absolute left-0 -bottom-1 w-0 h-[1.5px] bg-gray-300 transition-all group-hover:w-full"></span>
+        </a>
 
-
-<!-- EXPERIENCE-->
-<section id="experience" class="max-w-4xl mx-auto px-6 py-10">
-  <h2 class="text-3xl font-bold mb-8 text-center text-gray-100">Experience</h2>
-
-  <div class="relative border-l-2 border-blue-200 space-y-8">
-
-    <!-- Item -->
-    <div class="ml-6">
-      <div class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full"></div>
-      <div class="bg-gradient-to-br from-blue-50 to-white p-5 rounded-2xl shadow-sm hover:shadow-lg transition">
-        <h3 class="font-bold text-lg">IT Extracurricular Mentor – SMK Ganesa</h3>
-        <p class="text-sm text-gray-500 mb-2">2025 – Present</p>
-        <ul class="list-disc ml-5 text-sm space-y-1">
-          <li>Mentor students in IT and basic programming.</li>
-          <li>Guide students in developing simple tech projects.</li>
-          <li>Support problem-solving and technical skills.</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Item -->
-    <div class="ml-6">
-      <div class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full"></div>
-      <div class="bg-gradient-to-br from-blue-50 to-white p-5 rounded-2xl shadow-sm hover:shadow-lg transition">
-        <h3 class="font-bold text-lg">Computer & IT Teacher – SMK Ganesa</h3>
-        <p class="text-sm text-gray-500 mb-2">Aug 2024 – Present</p>
-          <ul class="list-disc ml-5 text-sm space-y-1">
-            <li>Analyzed academic and student performance data using Excel and Google Sheets to support data-driven decision making.</li>
-            <li>Delivered introductory lessons on AI, data analysis, and programming to 300+ students.</li>
-            <li>Designed project-based learning activities involving basic data processing and problem-solving.</li>
-            <li>Collected, cleaned, and organized student and academic data for reporting and evaluation.</li>
-            <li>Applied analytical thinking to identify patterns and improve learning outcomes.</li>
-          </ul>
-      </div>
-    </div>
-
-    <!-- Item -->
-    <div class="ml-6">
-      <div class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full"></div>
-      <div class="bg-gradient-to-br from-blue-50 to-white p-5 rounded-2xl shadow-sm hover:shadow-lg transition">
-        <h3 class="font-bold text-lg">Statistics Partner – BPS</h3>
-        <p class="text-sm text-gray-500 mb-2">Sep 2025 – Oct 2025</p>
-        <ul class="list-disc ml-5 text-sm space-y-1">
-          <li>Processed and cleaned 500+ spatial and survey datasets using QGIS and digital tools.</li>
-          <li>Performed data validation, ensuring accuracy, consistency, and completeness.</li>
-          <li>Integrated spatial and tabular data for statistical analysis and reporting.</li>
-          <li>Conducted data quality checks to improve reliability and reduce inconsistencies.</li>
-          <li>Collaborated with teams to ensure data readiness for further analysis.</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Item -->
-    <div class="ml-6">
-      <div class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full"></div>
-      <div class="bg-gradient-to-br from-blue-50 to-white p-5 rounded-2xl shadow-sm hover:shadow-lg transition">
-        <h3 class="font-bold text-lg">Data Entry – Agricultural Census (BPS)</h3>
-        <p class="text-sm text-gray-500 mb-2">Jul 2023 – Sep 2023</p>
-        <ul class="list-disc ml-5 text-sm space-y-1">
-          <li>Processed and validated 800+ agricultural datasets for statistical use.</li>
-          <li>Performed data cleaning to ensure consistency and accuracy.</li>
-          <li>Identified anomalies and corrected inconsistencies in large datasets.</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Item -->
-    <div class="ml-6">
-      <div class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full"></div>
-      <div class="bg-gradient-to-br from-blue-50 to-white p-5 rounded-2xl shadow-sm hover:shadow-lg transition">
-        <h3 class="font-bold text-lg">Internship – PT Anugrah Kreasi Digital</h3>
-        <p class="text-sm text-gray-500 mb-2">Apr 2023 – Jun 2023</p>
-        <ul class="list-disc ml-5 text-sm space-y-1">
-          <li>Managed social media and website content.</li>
-          <li>Optimized content using SEO practices.</li>
-          <li>Maintained websites using WordPress.</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Item -->
-    <div class="ml-6 ">
-      <div class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full"></div>
-      <div class="bg-gradient-to-br from-blue-50 to-white p-5 rounded-2xl shadow-sm hover:shadow-lg transition">
-        <h3 class="font-bold text-lg">Data Entry – Population Census (BPS)</h3>
-        <p class="text-sm text-gray-500 mb-2">Jan 2023 – Mar 2023</p>
-        <ul class="list-disc ml-5 text-sm space-y-1">
-          <li>Managed and structured 900+ population data records.</li>
-          <li>Applied data cleaning techniques to improve dataset quality.</li>
-          <li>Ensured data integrity through systematic validation processes.</li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-
-<!-- ORGANIZATION -->
-</section>
-<section id="organization" class="max-w-4xl mx-auto px-6 py-10">
-  <h2 class="text-3xl font-bold mb-8 text-center text-gray-100">Organization Experience</h2>
-
-  <div class="grid md:grid-cols-2 gap-6">
-
-    <!-- Alumni -->
-    <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-      <div class="flex items-center gap-3 mb-3">
-        <i data-lucide="briefcase" class="w-6 h-6 text-blue-500"></i>
-        <h3 class="font-bold">General Secretary</h3>
-      </div>
-      <p class="text-sm text-gray-500 mb-2">Informatics Engineering Alumni Association</p>
-      <p class="text-xs text-gray-400 mb-3">Sep 2024 – Present</p>
-      <ul class="list-disc ml-5 text-sm space-y-1">
-        <li>Managed official correspondence and documents.</li>
-        <li>Prepared and distributed reports and meeting minutes.</li>
-        <li>Coordinated alumni meetings and activities.</li>
-      </ul>
-    </div>
-
-    <!-- Himpunan -->
-    <div class="bg-gradient-to-br from-purple-50 to-white p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-      <div class="flex items-center gap-3 mb-3">
-        <i data-lucide="users" class="w-6 h-6 text-purple-500"></i>
-        <h3 class="font-bold">General Secretary</h3>
-      </div>
-      <p class="text-sm text-gray-500 mb-2">Informatics Engineering Student Association</p>
-      <p class="text-xs text-gray-400 mb-3">Aug 2021 – Aug 2023</p>
-      <ul class="list-disc ml-5 text-sm space-y-1">
-        <li>Prepared organizational performance reports.</li>
-        <li>Developed 10+ document templates.</li>
-        <li>Coordinated meetings and documentation workflows.</li>
-        <li>Organized multiple academic events.</li>
-      </ul>
-    </div>
-
-    <!-- Sosial -->
-    <div class="bg-gradient-to-br from-green-50 to-white p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition md:col-span-2">
-      <div class="flex items-center gap-3 mb-3">
-        <i data-lucide="heart" class="w-6 h-6 text-green-500"></i>
-        <h3 class="font-bold">Vice Chairman</h3>
-      </div>
-      <p class="text-sm text-gray-500 mb-2">Social Service Program</p>
-      <p class="text-xs text-gray-400 mb-3">Jan 2021 – May 2021</p>
-      <ul class="list-disc ml-5 text-sm space-y-1">
-        <li>Coordinated with external partners and sponsors.</li>
-        <li>Monitored program progress and ensured execution.</li>
-        <li>Maintained team communication and resolved issues.</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- Content Writing -->
-<!-- Content Writing -->
-<section id="writing" class="max-w-4xl mx-auto px-6 py-12">
-
-  <h2 class="text-3xl font-semibold mb-6 text-white text-center">
-    Content Writing
-  </h2>
-
-  <div class="bg-white p-5 rounded-2xl shadow-sm">
-
-    <div class="flex items-center gap-2 mb-3">
-      <i data-lucide="pen-tool" class="w-5 h-5 text-purple-500"></i>
-      <h3 class="font-bold">Guest Content Writer</h3>
-    </div>
-
-    <p class="text-sm text-gray-600 mb-4">
-      Contributed 15+ articles on external platforms focusing on technology, data, and digital trends. 
-      These articles aim to simplify complex concepts and make them accessible to a broader audience.
-  </p>
-
-    <!-- LIST LINK ARTIKEL -->
-    <div class="space-y-2">
-
-      <a href="https://mangcoding.com/id/pentingnya-big-data-sebagai-kunci-keunggulan-kompetitif-dalam-bisnis-modern/ " target="_blank" class="block text-blue-500 text-sm hover:underline">
-        → Article 1 : Pentingnya Big Data Sebagai Kunci Keunggulan Kompetitif Dalam Bisnis Modern
-      </a>
-
-      <a href="https://mangcoding.com/id/dampak-revolusi-blockchain-disektor-indostri-keuangan/" target="_blank" class="block text-blue-500 text-sm hover:underline">
-        → Article 2 : Dampak Revolusi Blockchain Di Sektor Industri Keuangan 
-      </a>
-
-      <a href="https://mangcoding.com/id/peran-penting-smarthome-dalam-kehidupan/" target="_blank" class="block text-blue-500 text-sm hover:underline">
-        → Article 3 : Peran Penting Smarthome Dalam Kehidupan 
-      </a>
-      
-      <a href="https://mangcoding.com/id/kegunaan-internet-of-behaviors-iob/" target="_blank" class="block text-blue-500 text-sm hover:underline">
-        → Article 4 : Kegunaan Internet of Behaviors (IoB)
-      </a>
-
-      <a href="https://mangcoding.com/id/mengenal-metavers-dan-perjalanan-evolusinya/" target="_blank" class="block text-blue-500 text-sm hover:underline">
-        → Article 5 : Mengenal Metavers dan Perjalanan Evolusinya  
-      </a>
-
-      <a href="https://mangcoding.com/id/mempercepat-kinerja-website-versi-mobile/" target="_blank" class="block text-blue-500 text-sm hover:underline">
-        → Article 6 : Mempercepat Kinerja Website Versi Mobile 
-      </a>
-      
-      <a href="http://mangcoding.com/id/perkembangan-teknologi-vr-dan-ar/" target="_blank" class="block text-blue-500 text-sm hover:underline">
-        → Article 7 : Perkembangan Teknologi VR dan AR
-      </a>
-
-      <a href="https://mangcoding.com/id/memanfaatkan-kecepatan-dan-keterhubungan-5g-untuk-menembus-pasar-global/" target="_blank" class="block text-blue-500 text-sm hover:underline">
-        → Article 8 : Memanfaatkan Kecepatan dan Keterhubungan 5G untuk Menembus Pasar Global 
-      </a>
-
-      <a href="https://mangcoding.com/id/pemanfaatan-teknologi-analitik-big-data-dalam-pengambilan-keputusan-bisnis-ekspor-impor/" target="_blank" class="block text-blue-500 text-sm hover:underline">
-        → Article 9 : Pemanfaatan Teknologi Analitik Big Data dalam Pengambilan Keputusan Bisnis Ekspor dan Impor
-      </a>
-
-      <a href="https://mangcoding.com/id/manfaat-teknologi-facial-recognition-dalam-penegakan-hukum/" target="_blank" class="block text-blue-500 text-sm hover:underline">
-        → Article 10: Manfaat Teknologi Facial Regognition dalam Penegakan Hukum 
-      </a>
-
-      <a href="https://mangcoding.com/id/faktor-umum-yang-dipertimbangkan-oleh-algoritma-sosial-media/" target="_blank" class="block text-blue-500 text-sm hover:underline">
-        → Article 11: Faktor Umum Yang Dipertimbangkan oleh Algoritma Sosial Media 
-      </a>
-
-      <a href="https://mangcoding.com/id/apa-itu-cryptocurrency-dan-bagaimana-informasi-serta-kegunaannya-dalam-dunia-teknologi/" target="_blank" class="block text-blue-500 text-sm hover:underline">
-        → Article 12: Apa itu Cryptocurrency dan Bagaimana Informasi Serta Kegunaaannya dalam Dunia Teknologi
-      </a>
-
-      <a href="https://mangcoding.com/id/bagaimana-strategi-pemasaran-konten-untuk-meningkatkan-lalu-lintas-website/" target="_blank" class="block text-blue-500 text-sm hover:underline">
-        → Article 13: Bagaimana Strategi Pemasaran Konten untuk Meningkatkan Lalu Lintas website 
-      </a>
-
-      <a href="https://mangcoding.com/id/kegunaan-shopify-dengan-platform-media-sosial-untuk-meningkatkan-jangkauan/" target="_blank" class="block text-blue-500 text-sm hover:underline">
-        → Article 14: Kegunaan Shopify dengan Platform Media Sosial untuk Meningkatkan Jangkauan 
-      </a>
-
-      <a href="https://mangcoding.com/id/menggunakan-teknologi-cloud-computing-untuk-skalabilitas-bisnis-ekspor-impor/" target="_blank" class="block text-blue-500 text-sm hover:underline">
-        → Article 15: Meningkatkan Teknologi Cloud Computing untuk Skalabilitas Bisnis Ekspor Impor 
-      </a>
-
-      <a href="https://mangcoding.com/id/peran-internet-of-medical-things-iomt/" target="_blank" class="block text-blue-500 text-sm hover:underline">
-        → Article 16: Peran Penting Internet of Media  Things(IoMT) dalam Tranformasi Pelayanan Kesehatan  
-      </a>
+      </nav>
 
     </div>
+  </header>
 
-  </div>
+    <!-- Hero -->
+  <section class="relative py-20 text-white">
 
-</section>  
+    <!-- Background Image -->
+    <!-- Overlay (biar teks tetap kebaca) -->
+    <div class="absolute inset-0 bg-black/50"></div>
 
-<!-- Skills -->
-<section id="skills" class="py-12">
-  <div class="max-w-5xl mx-auto px-6">
+    <!-- Content -->
+  <div class="relative max-w-4xl mx-auto text-center px-6">
 
-    <h2 class="text-3xl font-semibold mb-10 text-center text-gray-100">
-      Skills
+    <h2 class="text-4xl font-bold mb-4">
+      Data Analyst & AI Enthusiast
     </h2>
 
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+    <p class="text-gray-300 max-w-2xl mx-auto">
+      Informatics Engineering graduate with hands-on experience in public data systems and spatial analysis. 
+      Passionate about transforming data into meaningful insights and exploring machine learning for real-world applications.
+    </p>
 
-      <!-- SQL -->
-      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-        <i data-lucide="database" class="w-8 h-8 text-blue-500 mb-2"></i>
-        <span class="font-medium text-gray-800">SQL</span>
+  </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-5xl mx-auto px-6 py-12">
+
+    <div class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+
+      <div class="flex flex-col md:flex-row items-center gap-10">
+
+        <!-- FOTO -->
+        <div class="md:w-1/3 flex justify-center">
+          <img src="foto.jpg" 
+              alt="Profile"
+              class="w-52 h-52 object-cover rounded-xl border border-gray-200">
+        </div>
+
+        <!-- TEXT -->
+      <div class="md:w-2/3 text-center md:text-left">
+        <h2 class="text-2xl font-semibold mb-5 text-gray-800">
+          About Me
+        </h2>
+
+        <p class="text-gray-700 leading-relaxed">
+          I have been working closely with data—cleaning, validating, and interpreting it, 
+          particularly in spatial and statistical contexts through my involvement in public data projects.
+        </p>
+
+        <p class="text-gray-600 leading-relaxed mt-4">
+          Through my experience in both data-related work and teaching, I have developed a practical 
+          approach to problem-solving, along with strong attention to detail and the ability to explain concepts clearly.
+        </p>
+
+        <p class="text-gray-600 leading-relaxed mt-4">
+          I am interested in developing data-driven solutions and exploring the application of machine learning 
+          to support decision-making, especially in public and agricultural sectors.
+        </p>
+
       </div>
-
-      <!-- Python -->
-      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-        <i data-lucide="code" class="w-8 h-8 text-yellow-500 mb-2"></i>
-        <span class="font-medium text-gray-800">Python</span>
-      </div>
-
-      <!-- QGIS -->
-      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-        <i data-lucide="map" class="w-8 h-8 text-green-500 mb-2"></i>
-        <span class="font-medium text-gray-800">QGIS</span>
-      </div>
-
-      <!-- Excel -->
-      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-        <i data-lucide="bar-chart" class="w-8 h-8 text-emerald-500 mb-2"></i>
-        <span class="font-medium text-gray-800">Excel</span>
-      </div>
-
-      <!-- Machine Learning -->
-      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-        <i data-lucide="cpu" class="w-8 h-8 text-purple-500 mb-2"></i>
-        <span class="font-medium text-gray-800">Machine Learning</span>
-      </div>
-
-      <!-- Data Analysis -->
-      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-        <i data-lucide="line-chart" class="w-8 h-8 text-pink-500 mb-2"></i>
-        <span class="font-medium text-gray-800">Data Analysis</span>
-      </div>
-
-      <!-- Data Cleaning -->
-      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-        <i data-lucide="filter" class="w-8 h-8 text-gray-500 mb-2"></i>
-        <span class="font-medium text-gray-800">Data Cleaning</span>
-      </div>
-
-      <!-- Data Visualization -->
-      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-        <i data-lucide="pie-chart" class="w-8 h-8 text-indigo-500 mb-2"></i>
-        <span class="font-medium text-gray-800">Data Visualization</span>
-      </div>
-
-      <!-- Statistical Analysis -->
-      <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-        <i data-lucide="activity" class="w-8 h-8 text-red-400 mb-2"></i>
-        <span class="font-medium text-gray-800">Statistical Analysis</span>
       </div>
 
     </div>
 
-  </div>
-</section>
-
-  <!-- Contact -->
-<section id="contact" class=" py-10">
-  <div class="max-w-4xl mx-auto px-6">
+  </section>
+  <!-- School -->
+  <section id="education" class="max-w-4xl mx-auto px-6 py-12">
     
-    <h2 class="text-3xl font-bold mb-8 text-center text-gray-100">Contact</h2>
+    <h2 class="text-3xl font-bold mb-10 text-center text-gray-100">
+      Education
+    </h2>
 
-    <div class="bg-gray-50 p-6 rounded-2xl shadow-sm space-y-4">
+    <div class="relative border-l-2 border-blue-300 space-y-8">
 
-      <!-- Email -->
-      <div class="flex items-center gap-4">
-        <i data-lucide="mail" class="w-5 h-5 text-blue-500"></i>
-        <span class="w-24 font-medium">Email</span>
-        <span>:</span>
-        <a href="mailto:anggiaputriwulansuci@gmail.com" class="text-blue-500 hover:underline">
-          anggiaputriwulansuci@gmail.com
-        </a>
+      <!-- S1 -->
+      <div class="ml-6">
+        <div class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full"></div>
+
+        <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+          
+          <div class="flex items-center gap-3 mb-2">
+            <i data-lucide="graduation-cap" class="w-6 h-6 text-blue-500"></i>
+            <h3 class="font-bold text-lg">Bachelor of Informatics Engineering</h3>
+          </div>
+
+          <p class="text-gray-600">Universitas Nusa Putra, Sukabumi</p>
+          <p class="text-sm text-gray-500 mt-1">GPA: 3.60 / 4.00</p>
+
+        </div>
       </div>
 
-      <!-- LinkedIn -->
-      <div class="flex items-center gap-4">
-        <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M20.447 20.452H16.893V14.845C16.893 13.507 16.869 11.785 15.03 11.785C13.165 11.785 12.881 13.246 12.881 14.746V20.452H9.327V9H12.736V10.561H12.786C13.261 9.661 14.423 8.71 16.181 8.71C19.83 8.71 20.448 11.065 20.448 14.128V20.452ZM5.337 7.433C4.196 7.433 3.271 6.507 3.271 5.367C3.271 4.226 4.196 3.301 5.337 3.301C6.478 3.301 7.403 4.226 7.403 5.367C7.403 6.507 6.478 7.433 5.337 7.433ZM7.119 20.452H3.554V9H7.119V20.452Z"/>
-        </svg>
-        <span class="w-24 font-medium">LinkedIn</span>
-        <span>:</span>
-        <a href="https://www.linkedin.com/in/anggia-putri-wulan-suci-656792336" 
-           class="text-blue-500 hover:underline" target="_blank">
-          linkedin.com/in/anggia-putri-wulan-suci
-        </a>
-      </div>
+      <!-- SMA -->
+      <div class="ml-6">
+        <div class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full"></div>
 
-      <!-- Phone -->
-      <div class="flex items-center gap-4">
-        <i data-lucide="phone" class="w-5 h-5 text-green-500"></i>
-        <span class="w-24 font-medium">Phone</span>
-        <span>:</span>
-        <a href="tel:083806334428" class="text-blue-500 hover:underline">
-          083806334428
-        </a>
+        <div class="bg-gradient-to-br from-purple-50 to-white p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+          
+          <div class="flex items-center gap-3 mb-2">
+            <i data-lucide="school" class="w-6 h-6 text-purple-500"></i>
+            <h3 class="font-bold text-lg">Senior High School</h3>
+          </div>
+
+          <p class="text-gray-600">SMA Negeri 1 Cibadak</p>
+          <p class="text-sm text-gray-500 mt-1">Graduated: 2020</p>
+
+        </div>
       </div>
 
     </div>
-  </div>
-</section>
 
-  <!-- Footer -->
-  <footer class="text-center py-4 text-sm text-gray-100 ">
-    © 2026 Anggia Putri Wulan Suci
-  </footer>
-<script>
-  lucide.createIcons();
-</script>
+  </section>
+
+
+  <section id="projects" class="max-w-5xl mx-auto px-6 py-10">
+    <h2 class="text-3xl font-bold mb-8 text-center text-gray-100">Projects</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <!-- Project 1 -->
+      <div class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+        <div class="flex items-center gap-2 mb-3">
+          <i data-lucide="map" class="w-5 h-5 text-green-500"></i>
+          <h3 class="font-bold">Spatial Data Processing & Map Clipping</h3>
+        </div>
+        <p class="text-sm text-gray-600 mb-4">
+          Processed and refined geospatial data by clipping and aligning administrative boundaries using QGIS. 
+          Ensured data accuracy and consistency for further spatial analysis and mapping.
+        </p>
+        <a href="https://github.com/anggiapws/Spatial-Data-Processing-Map-Clipping-using-QGIS" target="_blank" class="text-blue-500 text-sm hover:underline">
+          View Project →
+        </a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+
+          <div class="flex items-center gap-2 mb-3">
+              <i data-lucide="database" class="w-5 h-5 text-indigo-500"></i>
+              <h3 class="font-bold">Agricultural Data Cleaning & Validation</h3>
+          </div>
+
+          <p class="text-sm text-gray-600 mb-4">
+              Cleaned and validated agricultural data by correcting errors, standardizing names, and checking duplicates.
+              The dataset was processed using an official government system and has been submitted for further use.
+              This repository serves as documentation of the cleaning process and results.
+          </p>
+
+          <a href="https://github.com/anggiapws/Agricultural-Export-Price-Analysis-Dashboard" target="_blank" class="text-blue-500 text-sm hover:underline">
+              View Project →
+          </a>
+
+      </div>
+
+    <!-- Project 2 -->
+      <div class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+
+          <div class="flex items-center gap-2 mb-3">
+              <i data-lucide="trending-up" class="w-5 h-5 text-blue-500"></i>
+              <h3 class="font-bold">Agricultural Export Value Prediction</h3>
+          </div>
+
+          <p class="text-sm text-gray-600 mb-4">
+            Developed a predictive model using Linear Regression to estimate export values of plantation commodities in international markets. 
+            The project includes data preprocessing, model training, and visualization through an interactive dashboard to support data-driven insights.
+          </p>
+
+          <a href="https://prediksieksporperkebunan.streamlit.app/" target="_blank" class="text-blue-500 text-sm hover:underline">
+              View Project →
+          </a>
+
+      </div> 
+
+    </div>
+  </section>
+
+
+
+  <!-- EXPERIENCE-->
+  <section id="experience" class="max-w-4xl mx-auto px-6 py-10">
+    <h2 class="text-3xl font-bold mb-8 text-center text-gray-100">Experience</h2>
+
+    <div class="relative border-l-2 border-blue-200 space-y-8">
+
+      <!-- Item -->
+      <div class="ml-6">
+        <div class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full"></div>
+        <div class="bg-gradient-to-br from-blue-50 to-white p-5 rounded-2xl shadow-sm hover:shadow-lg transition">
+          <h3 class="font-bold text-lg">IT Extracurricular Mentor – SMK Ganesa</h3>
+          <p class="text-sm text-gray-500 mb-2">2025 – Present</p>
+          <ul class="list-disc ml-5 text-sm space-y-1">
+            <li>Mentor students in IT and basic programming.</li>
+            <li>Guide students in developing simple tech projects.</li>
+            <li>Support problem-solving and technical skills.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Item -->
+      <div class="ml-6">
+        <div class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full"></div>
+        <div class="bg-gradient-to-br from-blue-50 to-white p-5 rounded-2xl shadow-sm hover:shadow-lg transition">
+        <h3 class="font-bold text-lg">Computer & IT Teacher – SMK Ganesa</h3>
+        <p class="text-sm text-gray-500 mb-2">Aug 2024 – Present</p>
+
+        <ul class="list-disc ml-5 text-sm space-y-1">
+          <li>Taught Computer Networking (AIJ), Creative Entrepreneurship (PKK), and AI & Coding across 15 classes, delivering lessons to 300+ students.</li>
+          <li>Analyzed student performance data using Excel and Google Sheets to support data-driven decision making.</li>
+          <li>Designed and implemented project-based learning activities focused on data analysis, problem-solving, and basic programming.</li>
+          <li>Collected, cleaned, and managed academic datasets for reporting, evaluation, and performance tracking.</li>
+          <li>Identified learning patterns and student performance trends to improve teaching effectiveness and student outcomes.</li>
+        </ul>
+        </div>
+      </div>
+
+      <!-- Item -->
+      <div class="ml-6">
+        <div class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full"></div>
+        <div class="bg-gradient-to-br from-blue-50 to-white p-5 rounded-2xl shadow-sm hover:shadow-lg transition">
+        <h3 class="font-bold text-lg">Statistics Partner – BPS (Wilkerstat Sukabumi)</h3>
+        <p class="text-sm text-gray-500 mb-2">Sep 2025 – Oct 2025</p>
+
+        <ul class="list-disc ml-5 text-sm space-y-1">
+          <li>Led the processing and validation of 500+ spatial and survey datasets using QGIS and official statistical systems.</li>
+          <li>Executed field data verification and cross-validation processes to ensure high data accuracy and consistency.</li>
+          <li>Detected and resolved data errors, inconsistencies, and anomalies, significantly improving dataset reliability.</li>
+          <li>Integrated spatial and tabular datasets to support comprehensive statistical analysis and reporting.</li>
+          <li>Applied strict data quality control procedures to ensure completeness and compliance with BPS standards.</li>
+          <li>Collaborated with cross-functional teams to meet tight data processing deadlines and reporting targets.</li>
+        </ul>
+        </div>
+      </div>
+
+      <!-- Item -->
+      <div class="ml-6">
+        <div class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full"></div>
+        <div class="bg-gradient-to-br from-blue-50 to-white p-5 rounded-2xl shadow-sm hover:shadow-lg transition">
+          <h3 class="font-bold text-lg">Data Entry – Agricultural Census (BPS)</h3>
+          <p class="text-sm text-gray-500 mb-2">Jul 2023 – Sep 2023</p>
+          <ul class="list-disc ml-5 text-sm space-y-2 text-gray-700">
+            <li>Verified and validated <strong>800+ field datasets</strong> to ensure data accuracy and alignment with source data.</li>
+            <li>Performed quality checks on <strong>800+ data records</strong>, maintaining consistency and data integrity.</li>
+            <li>Cleaned and corrected <strong>large-scale datasets</strong> by resolving errors, duplicates, and inconsistencies.</li>
+            <li>Identified <strong>data anomalies and outliers</strong>, improving dataset reliability for analysis and reporting.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Item -->
+      <div class="ml-6">
+        <div class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full"></div>
+        <div class="bg-gradient-to-br from-blue-50 to-white p-5 rounded-2xl shadow-sm hover:shadow-lg transition">
+          <h3 class="font-bold text-lg">Internship – PT Anugrah Kreasi Digital</h3>
+          <p class="text-sm text-gray-500 mb-2">Apr 2023 – Jun 2023</p>
+          <ul class="list-disc ml-5 text-sm space-y-2 text-gray-700">
+            <li>Managed and updated <strong>20+ social media and website content posts</strong> to maintain consistency and audience engagement.</li>
+            <li>Applied <strong>SEO optimization techniques</strong> (keywords, meta descriptions, content structure) to improve website visibility.</li>
+            <li>Maintained and updated company websites using <strong>WordPress</strong>, ensuring content accuracy and usability.</li>
+            <li>Collaborated with the team to support <strong>digital marketing campaigns</strong> and content planning.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Item -->
+      <div class="ml-6 ">
+        <div class="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full"></div>
+        <div class="bg-gradient-to-br from-blue-50 to-white p-5 rounded-2xl shadow-sm hover:shadow-lg transition">
+          <h3 class="font-bold text-lg">Data Entry – Population Census (BPS)</h3>
+          <p class="text-sm text-gray-500 mb-2">Jan 2023 – Mar 2023</p>
+          <ul class="list-disc ml-5 text-sm space-y-1">
+            <li>Managed and structured 900+ population data records.</li>
+            <li>Applied data cleaning techniques to improve dataset quality.</li>
+            <li>Ensured data integrity through systematic validation processes.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  <!-- ORGANIZATION -->
+  </section>
+  <section id="organization" class="max-w-4xl mx-auto px-6 py-10">
+    <h2 class="text-3xl font-bold mb-8 text-center text-gray-100">Organization Experience</h2>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- Alumni -->
+      <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+        <div class="flex items-center gap-3 mb-3">
+          <i data-lucide="briefcase" class="w-6 h-6 text-blue-500"></i>
+          <h3 class="font-bold">General Secretary</h3>
+        </div>
+        <p class="text-sm text-gray-500 mb-2">Informatics Engineering Alumni Association</p>
+        <p class="text-xs text-gray-400 mb-3">Sep 2024 – Present</p>
+        <ul class="list-disc ml-5 text-sm space-y-1">
+          <li>Managed official correspondence and documents.</li>
+          <li>Prepared and distributed reports and meeting minutes.</li>
+          <li>Coordinated alumni meetings and activities.</li>
+        </ul>
+      </div>
+
+      <!-- Himpunan -->
+      <div class="bg-gradient-to-br from-purple-50 to-white p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+        <div class="flex items-center gap-3 mb-3">
+          <i data-lucide="users" class="w-6 h-6 text-purple-500"></i>
+          <h3 class="font-bold">General Secretary</h3>
+        </div>
+        <p class="text-sm text-gray-500 mb-2">Informatics Engineering Student Association</p>
+        <p class="text-xs text-gray-400 mb-3">Aug 2021 – Aug 2023</p>
+        <ul class="list-disc ml-5 text-sm space-y-2 text-gray-700">
+          <li>Prepared and presented <strong>monthly reports</strong> on organizational activities and performance to leadership.</li>
+          <li>Developed <strong>10+ official document templates</strong> (invitations, requests, confirmations, decrees) using Microsoft Word to improve drafting efficiency.</li>
+          <li>Coordinated <strong>8+ monthly management meetings</strong>, handling logistics including Google Meet and venue arrangements.</li>
+          <li>Recorded <strong>8+ meeting minutes</strong> using Microsoft Word, ensuring accurate documentation of discussions and decisions.</li>
+          <li>Organized and supported <strong>10+ association events</strong> in collaboration with organizing committees.</li>
+          <li>Managed and archived <strong>100+ organizational documents</strong>, including correspondence and reports, ensuring structured and accessible documentation.</li>
+        </ul>
+
+      </div>
+
+      <!-- Sosial -->
+      <div class="bg-gradient-to-br from-green-50 to-white p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition md:col-span-2">
+        <div class="flex items-center gap-3 mb-3">
+          <i data-lucide="heart" class="w-6 h-6 text-green-500"></i>
+          <h3 class="font-bold">Vice Chairman</h3>
+        </div>
+        <p class="text-sm text-gray-500 mb-2">Social Service Program</p>
+        <p class="text-xs text-gray-400 mb-3">Jan 2021 – May 2021</p>
+        <ul class="list-disc ml-5 text-sm space-y-1">
+          <li>Coordinated with external partners and sponsors.</li>
+          <li>Monitored program progress and ensured execution.</li>
+          <li>Maintained team communication and resolved issues.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Content Writing -->
+  <!-- Content Writing -->
+  <section id="writing" class="max-w-4xl mx-auto px-6 py-12">
+
+    <h2 class="text-3xl font-semibold mb-6 text-white text-center">
+      Content Writing
+    </h2>
+
+    <div class="bg-white p-5 rounded-2xl shadow-sm">
+
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="pen-tool" class="w-5 h-5 text-purple-500"></i>
+        <h3 class="font-bold">Guest Content Writer</h3>
+      </div>
+
+      <p class="text-sm text-gray-600 mb-4">
+        Contributed 15+ articles on external platforms focusing on technology, data, and digital trends. 
+        These articles aim to simplify complex concepts and make them accessible to a broader audience.
+    </p>
+
+      <!-- LIST LINK ARTIKEL -->
+      <div class="space-y-2">
+
+        <a href="https://mangcoding.com/id/pentingnya-big-data-sebagai-kunci-keunggulan-kompetitif-dalam-bisnis-modern/ " target="_blank" class="block text-blue-500 text-sm hover:underline">
+          → Article 1 : Pentingnya Big Data Sebagai Kunci Keunggulan Kompetitif Dalam Bisnis Modern
+        </a>
+
+        <a href="https://mangcoding.com/id/dampak-revolusi-blockchain-disektor-indostri-keuangan/" target="_blank" class="block text-blue-500 text-sm hover:underline">
+          → Article 2 : Dampak Revolusi Blockchain Di Sektor Industri Keuangan 
+        </a>
+
+        <a href="https://mangcoding.com/id/peran-penting-smarthome-dalam-kehidupan/" target="_blank" class="block text-blue-500 text-sm hover:underline">
+          → Article 3 : Peran Penting Smarthome Dalam Kehidupan 
+        </a>
+        
+        <a href="https://mangcoding.com/id/kegunaan-internet-of-behaviors-iob/" target="_blank" class="block text-blue-500 text-sm hover:underline">
+          → Article 4 : Kegunaan Internet of Behaviors (IoB)
+        </a>
+
+        <a href="https://mangcoding.com/id/mengenal-metavers-dan-perjalanan-evolusinya/" target="_blank" class="block text-blue-500 text-sm hover:underline">
+          → Article 5 : Mengenal Metavers dan Perjalanan Evolusinya  
+        </a>
+
+        <a href="https://mangcoding.com/id/mempercepat-kinerja-website-versi-mobile/" target="_blank" class="block text-blue-500 text-sm hover:underline">
+          → Article 6 : Mempercepat Kinerja Website Versi Mobile 
+        </a>
+        
+        <a href="http://mangcoding.com/id/perkembangan-teknologi-vr-dan-ar/" target="_blank" class="block text-blue-500 text-sm hover:underline">
+          → Article 7 : Perkembangan Teknologi VR dan AR
+        </a>
+
+        <a href="https://mangcoding.com/id/memanfaatkan-kecepatan-dan-keterhubungan-5g-untuk-menembus-pasar-global/" target="_blank" class="block text-blue-500 text-sm hover:underline">
+          → Article 8 : Memanfaatkan Kecepatan dan Keterhubungan 5G untuk Menembus Pasar Global 
+        </a>
+
+        <a href="https://mangcoding.com/id/pemanfaatan-teknologi-analitik-big-data-dalam-pengambilan-keputusan-bisnis-ekspor-impor/" target="_blank" class="block text-blue-500 text-sm hover:underline">
+          → Article 9 : Pemanfaatan Teknologi Analitik Big Data dalam Pengambilan Keputusan Bisnis Ekspor dan Impor
+        </a>
+
+        <a href="https://mangcoding.com/id/manfaat-teknologi-facial-recognition-dalam-penegakan-hukum/" target="_blank" class="block text-blue-500 text-sm hover:underline">
+          → Article 10: Manfaat Teknologi Facial Regognition dalam Penegakan Hukum 
+        </a>
+
+        <a href="https://mangcoding.com/id/faktor-umum-yang-dipertimbangkan-oleh-algoritma-sosial-media/" target="_blank" class="block text-blue-500 text-sm hover:underline">
+          → Article 11: Faktor Umum Yang Dipertimbangkan oleh Algoritma Sosial Media 
+        </a>
+
+        <a href="https://mangcoding.com/id/apa-itu-cryptocurrency-dan-bagaimana-informasi-serta-kegunaannya-dalam-dunia-teknologi/" target="_blank" class="block text-blue-500 text-sm hover:underline">
+          → Article 12: Apa itu Cryptocurrency dan Bagaimana Informasi Serta Kegunaaannya dalam Dunia Teknologi
+        </a>
+
+        <a href="https://mangcoding.com/id/bagaimana-strategi-pemasaran-konten-untuk-meningkatkan-lalu-lintas-website/" target="_blank" class="block text-blue-500 text-sm hover:underline">
+          → Article 13: Bagaimana Strategi Pemasaran Konten untuk Meningkatkan Lalu Lintas website 
+        </a>
+
+        <a href="https://mangcoding.com/id/kegunaan-shopify-dengan-platform-media-sosial-untuk-meningkatkan-jangkauan/" target="_blank" class="block text-blue-500 text-sm hover:underline">
+          → Article 14: Kegunaan Shopify dengan Platform Media Sosial untuk Meningkatkan Jangkauan 
+        </a>
+
+        <a href="https://mangcoding.com/id/menggunakan-teknologi-cloud-computing-untuk-skalabilitas-bisnis-ekspor-impor/" target="_blank" class="block text-blue-500 text-sm hover:underline">
+          → Article 15: Meningkatkan Teknologi Cloud Computing untuk Skalabilitas Bisnis Ekspor Impor 
+        </a>
+
+        <a href="https://mangcoding.com/id/peran-internet-of-medical-things-iomt/" target="_blank" class="block text-blue-500 text-sm hover:underline">
+          → Article 16: Peran Penting Internet of Media  Things(IoMT) dalam Tranformasi Pelayanan Kesehatan  
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>  
+
+  <!-- Skills -->
+  <section id="skills" class="py-12">
+    <div class="max-w-5xl mx-auto px-6">
+
+      <h2 class="text-3xl font-semibold mb-10 text-center text-gray-100">
+        Skills
+      </h2>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+
+        <!-- SQL -->
+        <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+          <i data-lucide="database" class="w-8 h-8 text-blue-500 mb-2"></i>
+          <span class="font-medium text-gray-800">SQL</span>
+        </div>
+
+        <!-- Python -->
+        <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+          <i data-lucide="code" class="w-8 h-8 text-yellow-500 mb-2"></i>
+          <span class="font-medium text-gray-800">Python</span>
+        </div>
+
+        <!-- QGIS -->
+        <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+          <i data-lucide="map" class="w-8 h-8 text-green-500 mb-2"></i>
+          <span class="font-medium text-gray-800">QGIS</span>
+        </div>
+
+        <!-- Excel -->
+        <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+          <i data-lucide="bar-chart" class="w-8 h-8 text-emerald-500 mb-2"></i>
+          <span class="font-medium text-gray-800">Excel</span>
+        </div>
+
+        <!-- Machine Learning -->
+        <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+          <i data-lucide="cpu" class="w-8 h-8 text-purple-500 mb-2"></i>
+          <span class="font-medium text-gray-800">Machine Learning</span>
+        </div>
+
+        <!-- Data Analysis -->
+        <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+          <i data-lucide="line-chart" class="w-8 h-8 text-pink-500 mb-2"></i>
+          <span class="font-medium text-gray-800">Data Analysis</span>
+        </div>
+
+        <!-- Data Cleaning -->
+        <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+          <i data-lucide="filter" class="w-8 h-8 text-gray-500 mb-2"></i>
+          <span class="font-medium text-gray-800">Data Cleaning</span>
+        </div>
+
+        <!-- Data Visualization -->
+        <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+          <i data-lucide="pie-chart" class="w-8 h-8 text-indigo-500 mb-2"></i>
+          <span class="font-medium text-gray-800">Data Visualization</span>
+        </div>
+
+        <!-- Statistical Analysis -->
+        <div class="flex flex-col items-center justify-center bg-white/90 p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+          <i data-lucide="activity" class="w-8 h-8 text-red-400 mb-2"></i>
+          <span class="font-medium text-gray-800">Statistical Analysis</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+    <!-- Contact -->
+  <section id="contact" class=" py-10">
+    <div class="max-w-4xl mx-auto px-6">
+      
+      <h2 class="text-3xl font-bold mb-8 text-center text-gray-100">Contact</h2>
+
+      <div class="bg-gray-50 p-6 rounded-2xl shadow-sm space-y-4">
+
+        <!-- Email -->
+        <div class="flex items-center gap-4">
+          <i data-lucide="mail" class="w-5 h-5 text-blue-500"></i>
+          <span class="w-24 font-medium">Email</span>
+          <span>:</span>
+          <a href="mailto:anggiaputriwulansuci@gmail.com" class="text-blue-500 hover:underline">
+            anggiaputriwulansuci@gmail.com
+          </a>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="flex items-center gap-4">
+          <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.447 20.452H16.893V14.845C16.893 13.507 16.869 11.785 15.03 11.785C13.165 11.785 12.881 13.246 12.881 14.746V20.452H9.327V9H12.736V10.561H12.786C13.261 9.661 14.423 8.71 16.181 8.71C19.83 8.71 20.448 11.065 20.448 14.128V20.452ZM5.337 7.433C4.196 7.433 3.271 6.507 3.271 5.367C3.271 4.226 4.196 3.301 5.337 3.301C6.478 3.301 7.403 4.226 7.403 5.367C7.403 6.507 6.478 7.433 5.337 7.433ZM7.119 20.452H3.554V9H7.119V20.452Z"/>
+          </svg>
+          <span class="w-24 font-medium">LinkedIn</span>
+          <span>:</span>
+          <a href="https://www.linkedin.com/in/anggia-putri-wulan-suci-656792336" 
+            class="text-blue-500 hover:underline" target="_blank">
+            linkedin.com/in/anggia-putri-wulan-suci
+          </a>
+        </div>
+
+        <!-- Phone -->
+        <div class="flex items-center gap-4">
+          <i data-lucide="phone" class="w-5 h-5 text-green-500"></i>
+          <span class="w-24 font-medium">Phone</span>
+          <span>:</span>
+          <a href="tel:083806334428" class="text-blue-500 hover:underline">
+            083806334428
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 text-sm text-gray-100 ">
+      © 2026 Anggia Putri Wulan Suci
+    </footer>
+  <script>
+    lucide.createIcons();
+  </script>
 <script>
   const btn = document.getElementById("menu-btn");
   const menu = document.getElementById("menu");
@@ -609,5 +620,5 @@
   });
 </script>
 
-</body>
-</html>
+  </body>
+  </html>
