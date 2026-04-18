@@ -1,5 +1,5 @@
   <!DOCTYPE html>
-  <html lang="en">
+  <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,69 +61,120 @@
     </div>
   </header>
 
-    <!-- Hero -->
-  <section class="relative py-20 text-white">
+<!-- Hero -->
+<section class="relative py-20 text-white">
+  <div class="absolute inset-0 bg-black/50"></div>
 
-    <!-- Background Image -->
-    <!-- Overlay (biar teks tetap kebaca) -->
-    <div class="absolute inset-0 bg-black/50"></div>
-
-    <!-- Content -->
+  <!-- Content -->
   <div class="relative max-w-4xl mx-auto text-center px-6">
 
     <h2 class="text-4xl font-bold mb-4">
-      Data Analyst & AI Enthusiast
+      AI & Machine Learning Enthusiast | Data-Driven Problem Solver
     </h2>
 
     <p class="text-gray-300 max-w-2xl mx-auto">
-      Informatics Engineering graduate with hands-on experience in public data systems and spatial analysis. 
-      Passionate about transforming data into meaningful insights and exploring machine learning for real-world applications.
+      Informatics Engineering graduate with strong foundation in data analysis and growing expertise in machine learning and artificial intelligence. 
+      Experienced in building predictive models, data preprocessing, and transforming complex datasets into intelligent systems for real-world problem solving.
     </p>
 
   </div>
-  </section>
+</section>
 
   <!-- About -->
-  <section id="about" class="max-w-5xl mx-auto px-6 py-12">
+<section id="about" class="max-w-5xl mx-auto px-6 py-14">
 
-    <div class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+  <div class="bg-white/90 backdrop-blur 
+              p-6 md:p-8 rounded-2xl border border-gray-200
+              shadow-sm hover:shadow-md transition duration-300">
 
-      <div class="flex flex-col md:flex-row items-center gap-10">
+    <div class="flex flex-col md:flex-row items-center gap-10">
 
-        <!-- FOTO -->
-        <div class="md:w-1/3 flex justify-center">
+      <!-- FOTO -->
+      <div class="md:w-1/3 flex justify-center">
+        <div class="p-[2px] rounded-2xl bg-gray-200">
           <img src="foto.jpg" 
               alt="Profile"
-              class="w-52 h-52 object-cover rounded-xl border border-gray-200">
+              class="w-52 h-52 object-cover rounded-2xl bg-white">
         </div>
+      </div>
 
-        <!-- TEXT -->
+      <!-- TEXT -->
       <div class="md:w-2/3 text-center md:text-left">
-        <h2 class="text-2xl font-semibold mb-5 text-gray-800">
+
+        <!-- TITLE -->
+        <h2 class="text-2xl font-semibold text-gray-800 mb-5">
           About Me
         </h2>
 
+        <!-- PARAGRAPH -->
         <p class="text-gray-700 leading-relaxed">
-          I have been working closely with data—cleaning, validating, and interpreting it, 
-          particularly in spatial and statistical contexts through my involvement in public data projects.
+          I have a strong interest in Artificial Intelligence, particularly in machine learning and data-driven systems. 
+          My experience working with data has built a solid foundation in data preprocessing, validation, and analysis.
         </p>
 
         <p class="text-gray-600 leading-relaxed mt-4">
-          Through my experience in both data-related work and teaching, I have developed a practical 
-          approach to problem-solving, along with strong attention to detail and the ability to explain concepts clearly.
+          I am currently focusing on developing machine learning skills, including building predictive models, understanding algorithms, and evaluating model performance.
         </p>
 
         <p class="text-gray-600 leading-relaxed mt-4">
-          I am interested in developing data-driven solutions and exploring the application of machine learning 
-          to support decision-making, especially in public and agricultural sectors.
+          I am motivated to pursue a Master’s degree in Artificial Intelligence to deepen my knowledge in intelligent systems and contribute to impactful, real-world solutions.
         </p>
 
       </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Research Interests -->
+<section id="research-interests" class="py-14 scroll-mt-24">
+  <div class="max-w-3xl mx-auto px-6">
+
+    <div class="bg-white/90 backdrop-blur 
+                p-7 rounded-2xl border border-gray-200
+                shadow-sm hover:shadow-md transition duration-300">
+
+      <!-- Title -->
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-8 h-8 flex items-center justify-center rounded-lg bg-blue-100">
+          <i data-lucide="brain" class="w-5 h-5 text-blue-600"></i>
+        </div>
+        <h2 class="text-2xl font-semibold text-gray-800">
+          Research Interests
+        </h2>
+      </div>
+
+      <!-- Content -->
+      <div class="grid md:grid-cols-2 gap-4 text-sm text-gray-700">
+
+        <div class="flex items-start gap-2">
+          <i data-lucide="sparkles" class="w-4 h-4 text-blue-500 mt-1"></i>
+          <span>Machine Learning & Predictive Modeling</span>
+        </div>
+
+        <div class="flex items-start gap-2">
+          <i data-lucide="cpu" class="w-4 h-4 text-indigo-500 mt-1"></i>
+          <span>AI for Decision Support Systems</span>
+        </div>
+
+        <div class="flex items-start gap-2">
+          <i data-lucide="database" class="w-4 h-4 text-green-500 mt-1"></i>
+          <span>Data Mining & Pattern Recognition</span>
+        </div>
+
+        <div class="flex items-start gap-2">
+          <i data-lucide="bar-chart-3" class="w-4 h-4 text-purple-500 mt-1"></i>
+          <span>Statistical Learning & Model Evaluation</span>
+        </div>
+
       </div>
 
     </div>
 
-  </section>
+  </div>
+</section>
+
+
   <!-- School -->
   <section id="education" class="max-w-4xl mx-auto px-6 py-12">
     
@@ -221,8 +272,7 @@
           </div>
 
           <p class="text-sm text-gray-600 mb-4">
-            Developed a predictive model using Linear Regression to estimate export values of plantation commodities in international markets. 
-            The project includes data preprocessing, model training, and visualization through an interactive dashboard to support data-driven insights.
+            Built a machine learning model (Linear Regression) to predict agricultural export values, including data preprocessing, feature selection, model training, and evaluation.
           </p>
 
           <a href="https://prediksieksporperkebunan.streamlit.app/" target="_blank" class="text-blue-500 text-sm hover:underline">
@@ -234,7 +284,27 @@
     </div>
   </section>
 
+<!-- Academic & Research Experience -->
+<section id="academic-research" class="py-12">
+  <div class="max-w-3xl mx-auto px-4">
+    
+    <div class="bg-gradient-to-br from-green-50 to-white p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+      
+      <h2 class="text-xl font-bold mb-4 text-gray-800">
+        Academic & Research Experience
+      </h2>
 
+      <ul class="list-disc pl-5 space-y-2 text-sm text-gray-700">
+        <li>Conducted spatial data validation and integration using QGIS in collaboration with BPS.</li>
+        <li>Applied statistical analysis and data cleaning techniques to large-scale public datasets.</li>
+        <li>Explored machine learning models for predictive analysis in agricultural data.</li>
+        <li>Performed data preprocessing, transformation, and quality control to ensure analysis readiness.</li>
+      </ul>
+
+    </div>
+
+  </div>
+</section>
 
   <!-- EXPERIENCE-->
   <section id="experience" class="max-w-4xl mx-auto px-6 py-10">
@@ -345,21 +415,29 @@
     <div class="grid md:grid-cols-2 gap-6">
 
       <!-- Alumni -->
-      <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-        <div class="flex items-center gap-3 mb-3">
-          <i data-lucide="briefcase" class="w-6 h-6 text-blue-500"></i>
-          <h3 class="font-bold">General Secretary</h3>
-        </div>
-        <p class="text-sm text-gray-500 mb-2">Informatics Engineering Alumni Association</p>
-        <p class="text-xs text-gray-400 mb-3">Sep 2024 – Sep 2025</p>
-        <ul class="list-disc ml-5 text-sm space-y-1">
-          <li>Managed and organized official alumni correspondence, documentation, and administrative records.</li>
-          <li>Prepared and distributed meeting reports, minutes, and formal documents to support organizational transparency.</li>
-          <li>Coordinated alumni meetings and events, ensuring smooth communication and execution of activities.</li>
-          <li>Maintained structured documentation systems to improve accessibility and efficiency of organizational data.</li>
-          <li>Collaborated with leadership and members to support program planning and alumni engagement initiatives.</li>
-        </ul>
+    <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+      
+      <div class="flex items-center gap-3 mb-3">
+        <i data-lucide="briefcase" class="w-6 h-6 text-blue-500"></i>
+        <h3 class="font-bold">General Secretary</h3>
       </div>
+
+      <p class="text-sm text-gray-500 mb-2">
+        Informatics Engineering Alumni Association
+      </p>
+      <p class="text-xs text-gray-400 mb-3">
+        Sep 2024 – Sep 2025
+      </p>
+
+      <ul class="list-disc ml-5 text-sm space-y-2 text-gray-700">
+        <li>Managed and streamlined official alumni correspondence, documentation, and administrative systems.</li>
+        <li>Produced clear and structured meeting reports, minutes, and formal documents to enhance transparency.</li>
+        <li>Coordinated alumni meetings and events, ensuring smooth communication and execution.</li>
+        <li>Developed organized documentation systems to improve data accessibility and efficiency.</li>
+        <li>Collaborated with leadership and members to support program planning and alumni engagement initiatives.</li>
+      </ul>
+
+    </div>
 
       <!-- Himpunan -->
       <div class="bg-gradient-to-br from-purple-50 to-white p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
@@ -563,6 +641,162 @@
     </div>
   </section>
 
+
+<section class="py-12">
+  <div class="max-w-4xl mx-auto px-6">
+
+    <div class="bg-gradient-to-br from-indigo-50 via-white to-blue-50 
+                p-7 rounded-2xl shadow-sm hover:shadow-xl 
+                hover:-translate-y-1 transition duration-300">
+
+      <div class="flex items-center gap-3 mb-5">
+        <i data-lucide="cpu" class="w-6 h-6 text-indigo-500"></i>
+        <h2 class="font-bold text-2xl text-gray-800">
+          Technical Focus in AI
+        </h2>
+      </div>
+
+      <ul class="grid md:grid-cols-2 gap-4 text-sm text-gray-700">
+
+        <li class="flex items-start gap-2">
+          <i data-lucide="check-circle" class="w-4 h-4 text-indigo-500 mt-1"></i>
+          <span>Supervised Learning (Regression, Classification)</span>
+        </li>
+
+        <li class="flex items-start gap-2">
+          <i data-lucide="check-circle" class="w-4 h-4 text-indigo-500 mt-1"></i>
+          <span>Data Preprocessing & Feature Engineering</span>
+        </li>
+
+        <li class="flex items-start gap-2">
+          <i data-lucide="check-circle" class="w-4 h-4 text-indigo-500 mt-1"></i>
+          <span>Model Evaluation (RMSE, Accuracy)</span>
+        </li>
+
+        <li class="flex items-start gap-2">
+          <i data-lucide="check-circle" class="w-4 h-4 text-indigo-500 mt-1"></i>
+          <span>Python for Data Science (Pandas, Scikit-learn)</span>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Future Goals -->
+<section id="future-goals" class="py-12">
+  <div class="max-w-3xl mx-auto px-4">
+    
+    <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+      <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+        Future Goals
+      </h2>
+      <p class="text-sm text-gray-700 leading-relaxed">
+        I aim to pursue a Master’s degree in Artificial Intelligence, focusing on machine learning, predictive modeling, and intelligent systems. 
+        My goal is to contribute to research and development of AI solutions that address real-world challenges through data-driven approaches.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Certifications -->
+<section class="max-w-5xl mx-auto px-4 py-10">
+  <!-- Title -->
+  <h2 class="text-2xl font-bold text-gray-100 mb-6 text-center">
+    Certifications
+  </h2>
+
+  <!-- Grid -->
+  <div class="grid md:grid-cols-2 gap-6">
+
+    <!-- Card 1 -->
+    <div class="bg-gradient-to-br from-blue-50 to-white p-5 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+      <h3 class="font-semibold text-gray-800">
+        Artificial Intelligence – Certiport (ITS)
+      </h3>
+      <p class="text-xs text-gray-500 mt-1">
+        Fundamental concepts of AI, machine learning, and intelligent systems
+      </p>
+      <a href="https://drive.google.com/file/d/1KMUd1gdUSLUw1zZj_jPnOKqaSg4-lJ5P/view?usp=drive_link" target="_blank" 
+         class="mt-3 inline-flex items-center gap-1 text-xs text-blue-500 hover:underline">
+        View Certificate <span>↗</span>
+      </a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-gradient-to-br from-blue-50 to-white p-5 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+      <h3 class="font-semibold text-gray-800">
+        Python Programming – GTTC
+      </h3>
+      <p class="text-xs text-gray-500 mt-1">
+        Programming fundamentals, data structures, and problem solving using Python
+      </p>
+      <a href="https://drive.google.com/file/d/13TduEPfao9vDrkagaie6YslNfJuZ1qZB/view?usp=drive_link" target="_blank" 
+         class="mt-3 inline-flex items-center gap-1 text-xs text-blue-500 hover:underline">
+        View Certificate <span>↗</span>
+      </a>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-gradient-to-br from-blue-50 to-white p-5 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+      <h3 class="font-semibold text-gray-800">
+        Cloud Computing – Certiport (ITS)
+      </h3>
+      <p class="text-xs text-gray-500 mt-1">
+        Understanding cloud concepts, services, and infrastructure
+      </p>
+      <a href="https://drive.google.com/file/d/1CdesSeaLIe5OX929L6GPV-S5B2e4XUpP/view?usp=drive_link" target="_blank" 
+         class="mt-3 inline-flex items-center gap-1 text-xs text-blue-500 hover:underline">
+        View Certificate <span>↗</span>
+      </a>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="bg-gradient-to-br from-blue-50 to-white p-5 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+      <h3 class="font-semibold text-gray-800">
+        MikroTik MTCNA
+      </h3>
+      <p class="text-xs text-gray-500 mt-1">
+        Network configuration, routing, and networking fundamentals
+      </p>
+      <a href="https://drive.google.com/file/d/1lIBtPhqAiWuhPYtYbgzIVJXhvCalaLWG/view?usp=drive_link" target="_blank" 
+         class="mt-3 inline-flex items-center gap-1 text-xs text-blue-500 hover:underline">
+        View Certificate <span>↗</span>
+      </a>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="bg-gradient-to-br from-gray-50 to-white p-5 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+      <h3 class="font-semibold text-gray-800">
+        Public Speaking
+      </h3>
+      <p class="text-xs text-gray-500 mt-1">
+        Presentation and communication skills developed through teaching (Score: 80/100)
+      </p>
+      <a href="https://drive.google.com/file/d/1WS-OKUGk0JconO7-QIBIbZkH4bRl4WN7/view?usp=drive_link" target="_blank" 
+         class="mt-3 inline-flex items-center gap-1 text-xs text-blue-500 hover:underline">
+        View Certificate <span>↗</span>
+      </a>
+    </div>
+    <!-- Card 6 -->
+    <div class="bg-gradient-to-br from-green-50 to-white p-5 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+      <h3 class="font-semibold text-gray-800">
+        TOEIC
+      </h3>
+      <p class="text-xs text-gray-500 mt-1">
+        On Progress
+      </p>
+    </div>
+
+  </div>
+
+
+  
+</section>
     <!-- Contact -->
   <section id="contact" class=" py-10">
     <div class="max-w-4xl mx-auto px-6">
