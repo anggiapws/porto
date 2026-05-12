@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anggia Putri Wulan Suci</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
 
   <body class="text-gray-800 bg-cover bg-center bg-fixed " style="background-image: url('bg.jpg');">
@@ -222,67 +221,74 @@
 
   </section>
 
+<!-- PROJECT -->
+<section id="projects" class="max-w-5xl mx-auto px-6 py-10">
+  <h2 class="text-3xl font-bold mb-8 text-center text-gray-100">Projects</h2>
 
-  <section id="projects" class="max-w-5xl mx-auto px-6 py-10">
-    <h2 class="text-3xl font-bold mb-8 text-center text-gray-100">Projects</h2>
+  <div class="grid md:grid-cols-3 gap-6">
 
-    <div class="grid md:grid-cols-3 gap-6">
-
-      <!-- Project 1 -->
-      <div class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-        <div class="flex items-center gap-2 mb-3">
-          <i data-lucide="map" class="w-5 h-5 text-green-500"></i>
-          <h3 class="font-bold">Spatial Data Processing & Map Clipping</h3>
-        </div>
-        <p class="text-sm text-gray-600 mb-4">
-          Processed and refined geospatial data by clipping and aligning administrative boundaries using QGIS. 
-          Ensured data accuracy and consistency for further spatial analysis and mapping.
-        </p>
-        <a href="https://github.com/anggiapws/Spatial-Data-Processing-Map-Clipping-using-QGIS" target="_blank" class="text-blue-500 text-sm hover:underline">
-          View Project →
-        </a>
+    <!-- Project 1 -->
+    <div class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="map" class="w-5 h-5 text-green-500"></i>
+        <h3 class="font-bold">Spatial Data Processing & Map Clipping</h3>
       </div>
-
-      <!-- Project 2 -->
-      <div class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-
-          <div class="flex items-center gap-2 mb-3">
-              <i data-lucide="database" class="w-5 h-5 text-indigo-500"></i>
-              <h3 class="font-bold">Agricultural Data Cleaning & Validation</h3>
-          </div>
-
-          <p class="text-sm text-gray-600 mb-4">
-              Cleaned and validated agricultural data by correcting errors, standardizing names, and checking duplicates.
-              The dataset was processed using an official government system and has been submitted for further use.
-              This repository serves as documentation of the cleaning process and results.
-          </p>
-
-          <a href="https://github.com/anggiapws/Agricultural-Export-Price-Analysis-Dashboard" target="_blank" class="text-blue-500 text-sm hover:underline">
-              View Project →
-          </a>
-
-      </div>
+      <p class="text-sm text-gray-600 mb-3">
+        Processed geospatial datasets using QGIS by performing boundary clipping and alignment. 
+        Improved spatial accuracy and ensured consistency for mapping and analysis.
+      </p>
+      <p class="text-xs text-gray-500 mb-3">
+        Tools: QGIS | Task: Data Cleaning, Spatial Validation
+      </p>
+      <a href="https://github.com/anggiapws/Spatial-Data-Processing-Map-Clipping-using-QGIS" target="_blank" class="text-blue-500 text-sm hover:underline">
+        GitHub →
+      </a>
+    </div>
 
     <!-- Project 2 -->
-      <div class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
-
-          <div class="flex items-center gap-2 mb-3">
-              <i data-lucide="trending-up" class="w-5 h-5 text-blue-500"></i>
-              <h3 class="font-bold">Agricultural Export Value Prediction</h3>
-          </div>
-
-          <p class="text-sm text-gray-600 mb-4">
-            Built a machine learning model (Linear Regression) to predict agricultural export values, including data preprocessing, feature selection, model training, and evaluation.
-          </p>
-
-          <a href="https://prediksieksporperkebunan.streamlit.app/" target="_blank" class="text-blue-500 text-sm hover:underline">
-              View Project →
-          </a>
-
-      </div> 
-
+    <div class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="database" class="w-5 h-5 text-indigo-500"></i>
+        <h3 class="font-bold">Agricultural Data Cleaning & Validation</h3>
+      </div>
+      <p class="text-sm text-gray-600 mb-3">
+        Cleaned and validated large-scale agricultural datasets by handling missing values, duplicates, and inconsistencies. 
+        Improved data quality and reliability for further statistical analysis.
+      </p>
+      <p class="text-xs text-gray-500 mb-3">
+        Tools: Python, Excel | Task: Data Cleaning, Data Validation
+      </p>
+      <a href="https://github.com/anggiapws/Agricultural-Export-Price-Analysis-Dashboard" target="_blank" class="text-blue-500 text-sm hover:underline">
+        GitHub →
+      </a>
     </div>
-  </section>
+
+    <!-- Project 3 -->
+    <div class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+      <div class="flex items-center gap-2 mb-3">
+        <i data-lucide="trending-up" class="w-5 h-5 text-blue-500"></i>
+        <h3 class="font-bold">Agricultural Export Value Prediction</h3>
+      </div>
+      <p class="text-sm text-gray-600 mb-3">
+        Developed a machine learning model (Linear Regression) to predict agricultural export values. 
+        Performed preprocessing, feature selection, and model evaluation.
+      </p>
+      <p class="text-xs text-gray-500 mb-3">
+        Tools: Python (Pandas, Scikit-learn) | Task: Regression Modeling
+      </p>
+
+      <div class="flex gap-3">
+        <a href="https://github.com/anggiapws/predictprice-main.git" target="_blank" class="text-blue-500 text-sm hover:underline">
+          GitHub →
+        </a>
+        <a href="https://prediksieksporperkebunan.streamlit.app/" target="_blank" class="text-green-500 text-sm hover:underline">
+          Live Demo →
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 <!-- Academic & Research Experience -->
 <section id="academic-research" class="py-12">
@@ -795,60 +801,70 @@
   </div>
 
 
-  
-</section>
-    <!-- Contact -->
-  <section id="contact" class=" py-10">
-    <div class="max-w-4xl mx-auto px-6">
-      
-      <h2 class="text-3xl font-bold mb-8 text-center text-gray-100">Contact</h2>
+<!-- Contact -->
+<section id="contact" class="py-10">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    
+    <h2 class="text-3xl font-bold mb-8 text-center text-gray-100">Contact</h2>
 
-      <div class="bg-gray-50 p-6 rounded-2xl shadow-sm space-y-4">
+    <div class="bg-gray-50 p-6 rounded-2xl shadow-sm space-y-4">
 
-        <!-- Email -->
-        <div class="flex items-center gap-4">
-          <i data-lucide="mail" class="w-5 h-5 text-blue-500"></i>
-          <span class="w-24 font-medium">Email</span>
-          <span>:</span>
-          <a href="mailto:anggiaputriwulansuci@gmail.com" class="text-blue-500 hover:underline">
-            anggiaputriwulansuci@gmail.com
-          </a>
+      <!-- Email -->
+      <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+        <div class="flex items-center gap-2">
+          <span class="font-medium w-24">Email</span>
         </div>
-
-        <!-- LinkedIn -->
-        <div class="flex items-center gap-4">
-          <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M20.447 20.452H16.893V14.845C16.893 13.507 16.869 11.785 15.03 11.785C13.165 11.785 12.881 13.246 12.881 14.746V20.452H9.327V9H12.736V10.561H12.786C13.261 9.661 14.423 8.71 16.181 8.71C19.83 8.71 20.448 11.065 20.448 14.128V20.452ZM5.337 7.433C4.196 7.433 3.271 6.507 3.271 5.367C3.271 4.226 4.196 3.301 5.337 3.301C6.478 3.301 7.403 4.226 7.403 5.367C7.403 6.507 6.478 7.433 5.337 7.433ZM7.119 20.452H3.554V9H7.119V20.452Z"/>
-          </svg>
-          <span class="w-24 font-medium">LinkedIn</span>
-          <span>:</span>
-          <a href="https://www.linkedin.com/in/anggia-putri-wulan-suci-656792336" 
-            class="text-blue-500 hover:underline" target="_blank">
-            linkedin.com/in/anggia-putri-wulan-suci
-          </a>
-        </div>
-
-        <!-- Phone -->
-        <div class="flex items-center gap-4">
-          <i data-lucide="phone" class="w-5 h-5 text-green-500"></i>
-          <span class="w-24 font-medium">Phone</span>
-          <span>:</span>
-          <a href="tel:083806334428" class="text-blue-500 hover:underline">
-            083806334428
-          </a>
-        </div>
-
+        <span class="hidden sm:inline">:</span>
+        <a href="mailto:anggiaputriwulansuci@gmail.com" class="text-blue-500 hover:underline break-all">
+          anggiaputriwulansuci@gmail.com
+        </a>
       </div>
+
+      <!-- LinkedIn -->
+      <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+        <div class="flex items-center gap-2">
+          <span class="font-medium w-24">LinkedIn</span>
+        </div>
+        <span class="hidden sm:inline">:</span>
+        <a href="https://www.linkedin.com/in/anggia-putri-wulan-suci-656792336" 
+          class="text-blue-500 hover:underline break-all" target="_blank">
+          linkedin.com/in/anggia-putri-wulan-suci
+        </a>
+      </div>
+
+      <!-- GitHub (NEW 🔥) -->
+      <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+        <div class="flex items-center gap-2">
+          <span class="font-medium w-24">GitHub</span>
+        </div>
+        <span class="hidden sm:inline">:</span>
+        <a href="https://github.com/anggiapws" 
+          class="text-blue-500 hover:underline break-all" target="_blank">
+          github.com/anggiapws
+        </a>
+      </div>
+
+      <!-- Phone -->
+      <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+        <div class="flex items-center gap-2">
+          <span class="font-medium w-24">Phone</span>
+        </div>
+        <span class="hidden sm:inline">:</span>
+        <a href="tel:083806334428" class="text-blue-500 hover:underline">
+          083806334428
+        </a>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
     <!-- Footer -->
     <footer class="text-center py-4 text-sm text-gray-100 ">
       © 2026 Anggia Putri Wulan Suci
     </footer>
-  <script>
-    lucide.createIcons();
-  </script>
+
+
 <script>
   const btn = document.getElementById("menu-btn");
   const menu = document.getElementById("menu");
